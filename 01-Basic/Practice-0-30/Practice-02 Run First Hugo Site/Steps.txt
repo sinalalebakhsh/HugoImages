@@ -1,9 +1,63 @@
 ===================================================
 1- In Terminal (in current directory you want create a site)
 hugo new site YourSiteName
+
+Output:
+    Congratulations! Your new Hugo site was created in /home/sina/01-Repo/Tests/2- Hugo Test/Acron
+
+    Just a few more steps...
+
+    1. Change the current directory to /home/sina/01-Repo/Tests/2- Hugo Test/Acron.
+    2. Create or install a theme:
+    - Create a new theme with the command "hugo new theme <THEMENAME>"
+    - Install a theme from https://themes.gohugo.io/
+    3. Edit hugo.toml, setting the "theme" property to the theme name.
+    4. Create new content with the command "hugo new content <SECTIONNAME>/<FILENAME>.<FORMAT>".
+    5. Start the embedded web server with the command "hugo server --buildDrafts".
+
+    See documentation at https://gohugo.io/.
 ===================================================
+2- Create file in all empty directories
+.gitsave
 ===================================================
+3- In Terminal
+git add .
+git commit -m "Generate new hugo site"
+git push -u origin main
+
+Output:
+    Enumerating objects: 7, done.
+    Counting objects: 100% (7/7), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (6/6), 673 bytes | 336.00 KiB/s, done.
+    Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+    To gitlab.com:sinalalebakhsh/goimages-practice-7.git
+    40ada3c..68ec22f  main -> main
+    Branch 'main' set up to track remote branch 'main' from 'origin'.
 ===================================================
+4- create this file in root directory
+.editorconfig
+===================================================
+5- go to this link and copy that file
+https://gist.github.com/tygerbytes/2773f928bb5202669e14210d2b79c488
+===================================================
+6- This is and Paste into editorconfig
+# http://EditorConfig.org
+root = true
+
+[*]
+indent_size = 2
+indent_style = space
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+===================================================
+
 ===================================================
 ===================================================
 ===================================================
