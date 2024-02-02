@@ -62,7 +62,31 @@ git add .editorconfig
 git commit -m " add editorconfig file"
 git push -u origin main
 ===================================================
+8- go to this link and create gitignore file for Hugo
+https://www.toptal.com/developers/gitignore/
+
+Output:
+    # Created by https://www.toptal.com/developers/gitignore/api/hugo
+    # Edit at https://www.toptal.com/developers/gitignore?templates=hugo
+
+    ### Hugo ###
+    # Generated files by hugo
+    /public/
+    /resources/_gen/
+    /assets/jsconfig.json
+    hugo_stats.json
+
+    # Executable may be added to repository
+    hugo.exe
+    hugo.darwin
+    hugo.linux
+
+    # Temporary lock file while building
+    /.hugo_build.lock
+
+    # End of https://www.toptal.com/developers/gitignore/api/hugo
 ===================================================
+9- Create .gitignore file in current directory project
 ===================================================
 ===================================================
 ===================================================
