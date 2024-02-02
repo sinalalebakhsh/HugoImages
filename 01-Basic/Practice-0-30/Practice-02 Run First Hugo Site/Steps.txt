@@ -57,7 +57,10 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 ===================================================
-
+7- In Terminal
+git add .editorconfig
+git commit -m " add editorconfig file"
+git push -u origin main
 ===================================================
 ===================================================
 ===================================================
