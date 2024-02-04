@@ -135,8 +135,105 @@ Linux OR mac:
 Output:
     If it's right we have nothing!
 =======================================================
-21- 
+21- add this to this-project/.gitignore and delete themes/HugoMDL/.gitignore
+.sass-cache/
 =======================================================
+22- Cut the Apache LICENSE from themes/HugoMDL/LICENSE and paste it in current directory project
+=======================================================
+23- Copy content of themes/HugoMDL/exampleSite/config.toml
+It's these:
+    baseurl = "http://your.base.url/"
+    languageCode = "en-us"
+    title = "My HugoMDL Site"
+    theme = "HugoMDL"
+    MetaDataFormat = "yaml"
+
+    [permalinks]
+        page = "/:title/"
+        about = "/:filename/"
+
+    [params]
+    author = "Firstname Lastname"
+    avatar = "/images/avatar.png"
+    background = "/images/background.jpg"
+    description = "A place to publish my incomprehensible ramblings" #meta description
+    image = "/images/avatar-192x210.png" #for frontpage profile card
+    mdlPrimary = "grey"
+    mdlSecondary = "orange"
+    website = "example.com"
+    email = "Firstname@example.com"
+    twitter = "https://twitter.com/firstname_lastname"
+    github = "https://github.com/firstname_lastname/"
+    linkedin = "https://linkedin.com/in/firstname_lastname/"
+    facebook = "https://facebook.com/firstname_lastname/"
+    copyrightyear = "2015"
+    frontpageposts = 6 #number of post cards to display on frontpage
+
+    # Fully customizable header menu
+    [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = -200
+    [[menu.main]]
+    name = "Articles"
+    url = "/post/"
+    weight = -180
+    [[menu.main]]
+    name = "Projects"
+    url = "/project/"
+    weight = -160
+    [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = "-140"
+
+=======================================================
+24- Paste it into this address current-directory-project > hugo.toml
+=======================================================
+25- Change these two lines
+baseURL = 'https://example.org/'
+...
+title = 'Acron-Hugo'
+...
+=======================================================
+26- Change this in themes/HugoMDL/layouts/index.html
+{{- partials "header.html" . }}
+=======================================================
+27- Change this in themes/HugoMDL/layouts/_default/list.html
+{{- partials "header.html" . }}
+=======================================================
+28- in Terminal current directory project
+hugo server
+
+Output:
+    Watching for changes in /home/sina/01-Repo/Tests/2- Hugo Test/Acron/{archetypes,assets,content,data,i18n,layouts,static,themes}
+    Watching for config changes in /home/sina/01-Repo/Tests/2- Hugo Test/Acron/hugo.toml
+    Start building sites …
+    hugo v0.120.4+extended linux/amd64 BuildDate=unknown
+
+
+                    | EN
+    -------------------+-----
+    Pages            |  6
+    Paginator pages  |  0
+    Non-page files   |  0
+    Static files     | 28
+    Processed images |  0
+    Aliases          |  2
+    Sitemaps         |  1
+    Cleaned          |  0
+
+    Built in 19 ms
+    Environment: "development"
+    Serving pages from memory
+    Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
+
+
+=======================================================
+29- go to browser at
+http://localhost:1313/
 =======================================================
 =======================================================
 =======================================================
