@@ -43,6 +43,8 @@ Output:
 https://gist.github.com/tygerbytes/2773f928bb5202669e14210d2b79c488
 =======================================================
 6- This is and Paste into editorconfig
+
+Content:
 # http://EditorConfig.org
 root = true
 
@@ -65,30 +67,83 @@ git push -u origin main
 8- go to this link and create gitignore file for Hugo
 https://www.toptal.com/developers/gitignore/
 
-Output:
-    # Created by https://www.toptal.com/developers/gitignore/api/hugo
-    # Edit at https://www.toptal.com/developers/gitignore?templates=hugo
+Content:
+# Created by https://www.toptal.com/developers/gitignore/api/hugo
+# Edit at https://www.toptal.com/developers/gitignore?templates=hugo
 
-    ### Hugo ###
-    # Generated files by hugo
-    /public/
-    /resources/_gen/
-    /assets/jsconfig.json
-    hugo_stats.json
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
-    # Executable may be added to repository
-    hugo.exe
-    hugo.darwin
-    hugo.linux
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+hugo*
 
-    # Temporary lock file while building
-    /.hugo_build.lock
+# Temporary lock file while building
+/.hugo_build.lock
 
-    # End of https://www.toptal.com/developers/gitignore/api/hugo
+# End of https://www.toptal.com/developers/gitignore/api/hugo
 =======================================================
 9- Create .gitignore file in current directory project
 =======================================================
 10- paste that step 8
+=======================================================
+11- Go to this link
+https://themes.gohugo.io
+=======================================================
+12- Choose a theme and go to demo
+=======================================================
+13- in browser open up three dots on browser > More tools > Developer tools
+=======================================================
+14- Click on the "Audits"
+=======================================================
+15- Click on Perform an audit
+=======================================================
+16- Check the boxes
+=======================================================
+17- Run audit
+=======================================================
+18- Go to this link
+https://github.com/jchatkinson/HugoMDL
+OR
+https://github.com/sinalalebakhsh/HugoMDL
+=======================================================
+19- in Terminal current directory project
+git clone --depth 1 git@github.com:sinalalebakhsh/HugoMDL.git ./themes/HugoMDL
+
+Output: (I use my username. You can fork than use your username)
+    Cloning into './themes/HugoMDL'...
+    remote: Enumerating objects: 109, done.
+    remote: Counting objects: 100% (109/109), done.
+    remote: Compressing objects: 100% (87/87), done.
+    remote: Total 109 (delta 28), reused 72 (delta 16), pack-reused 0
+    Receiving objects: 100% (109/109), 6.11 MiB | 420.00 KiB/s, done.
+    Resolving deltas: 100% (28/28), done.
+=======================================================
+20- Delete .git inside that with this in Terminal
+Windows:
+    rm -Recurse -Force .\themes\HugoMDL\.git
+
+Linux OR mac:
+    rm -rf ./theme/HugoMDL/.git
+
+Output:
+    If it's right we have nothing!
+=======================================================
+21- 
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
 =======================================================
 =======================================================
 =======================================================
